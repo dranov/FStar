@@ -3029,9 +3029,8 @@ let (maybe_instantiate :
                                        in
                                     (((v1,
                                         (FStar_Pervasives_Native.Some
-                                           (FStar_Syntax_Syntax.Implicit
-                                              false))) :: args), bs3, subst3,
-                                      uu____7244)))
+                                           FStar_Syntax_Syntax.imp_tag)) ::
+                                      args), bs3, subst3, uu____7244)))
                       | (uu____7271,bs3) ->
                           ([], bs3, subst1,
                             FStar_TypeChecker_Env.trivial_guard)
