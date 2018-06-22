@@ -1294,7 +1294,7 @@ let (shorten_module_path :
                | FStar_Pervasives_Native.Some (stripped_ids,rev_kept_ids) ->
                    (stripped_ids, (FStar_List.rev rev_kept_ids)))
            in
-        if is_full_path
+        if is_full_path && ((FStar_List.length ids) > (Prims.parse_int "0"))
         then
           let uu____4134 =
             let uu____4137 = FStar_Ident.lid_of_ids ids  in
